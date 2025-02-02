@@ -5,17 +5,17 @@ struct node{
 	struct node *next;
 };
 
-    struct node* start=0;
+    struct node* start=0;  // declare global variable
      
-    struct node*create_node(){
+    struct node*create_node(){  // create a new node
     	struct node*h1;
     	h1=(struct node*)malloc(sizeof(struct node));
-    	printf("enter your data to store \n");
+    	printf("enter your data to store : ");
     	scanf("%d",&h1 -> data);
     	h1 -> next = 0;
 	}
 	
-       insert_begin(){
+       insert_begin(){  // insert at begin
 		struct node* k1;
 		k1=create_node();
 		if(k1 == 0){
@@ -27,11 +27,11 @@ struct node{
 		}
 	}
 	
-	display(){
+	display(){  // display the list (data)
 		struct node* j1;
 		j1 = start;
 		while(j1 != 0){
-			printf("%d ->",j1 -> data);
+			printf("%d ",j1 -> data);
 			j1 = j1 -> next;
 		}
 	}
@@ -47,7 +47,7 @@ int main(){
 	while(1){
 	
 
-	printf("\nplease enetr your choice \n");
+	printf("\nplease enetr your choice : ");
 	scanf("%d",&ch);
 	
 	switch(ch){
@@ -60,7 +60,7 @@ int main(){
 			break;
 		}
 		case 3:{
-			printf("exit");
+			printf("exit successfully");
 			break;
 		}
 		default :{
