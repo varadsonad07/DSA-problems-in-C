@@ -15,7 +15,7 @@ struct node{
     	h1 -> next = 0;
 	}
 	
-	insert_begin(){
+       insert_begin(){
 		struct node* k1;
 		k1=create_node();
 		if(k1 == 0){
@@ -62,6 +62,9 @@ int main(){
 		case 3:{
 			printf("exit");
 			break;
+		}
+		default :{
+			printf("wrong choice");
 		}
 	}
     }
