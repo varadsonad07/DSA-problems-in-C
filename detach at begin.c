@@ -38,6 +38,7 @@ Detach_at_begin(){
 	    struct node* y1;
         y1 = start;
 		start = start -> next;
+		y1 -> next = 0;
 		free(y1);
 	}
 }
