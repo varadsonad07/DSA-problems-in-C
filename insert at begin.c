@@ -1,4 +1,5 @@
 #include<Stdio.h>
+#include<Stdlib.h>
 
 struct node{
 	int data;
