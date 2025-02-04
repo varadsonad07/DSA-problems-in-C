@@ -66,6 +66,7 @@ int main(){
 		}
 		default :{
 			printf("wrong choice");
+			printf("\n");
 		}
 	}
     }
